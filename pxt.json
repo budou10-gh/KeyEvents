@@ -1,5 +1,6 @@
 {
     "name": "KeyEvents+",
+    "version": "1.0.0",
     "description": "A remake of the BrowserEvents extension, redesigned for greater usability and keyboard-centric functionality.",
     "dependencies": {
         "device": "*"
