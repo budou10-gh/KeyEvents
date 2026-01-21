@@ -89,9 +89,7 @@ namespace keyEvents {
         Seven = 55,
         Eight = 56,
         Nine = 57,
-        BackTick = 192,
         Hyphen = 189,
-        Equals = 187,
         Q = 81,
         W = 87,
         E = 69,
@@ -102,22 +100,15 @@ namespace keyEvents {
         I = 73,
         O = 79,
         P = 80,
-        OpenBracket = 219,
-        CloseBracket = 221,
-        BackSlash = 220,
         A = 65,
         S = 83,
         D = 68,
         F = 70,
         G = 71,
         H = 72,
-        Space = 32,
-        PageUp = 33,
         J = 74,
         K = 75,
         L = 76,
-        SemiColon = 186,
-        Apostrophe = 222,
         Z = 90,
         X = 88,
         C = 67,
@@ -127,27 +118,9 @@ namespace keyEvents {
         M = 77,
         Comma = 188,
         Period = 190,
-        ForwardSlash = 191,
         Shift = 16,
         Enter = 13,
-        CapsLock = 20,
         Tab = 9,
-        Control = 17,
-        Meta = 91,
-        Alt = 18,
-        ArrowUp = 38,
-        ArrowDown = 40,
-        ArrowLeft = 37,
-        ArrowRight = 39,
-        PageDown = 34,
-        End = 35,
-        Home = 36,
-        LeftShift = 1016,
-        RightShift = 1017,
-        LeftControl = 1018,
-        RightControl = 1019,
-        Backspace = 8,
-        Delete = 46,
     }
 
     export enum KeyEvent {
@@ -186,12 +159,6 @@ namespace keyEvents {
                 return "O";
             case Key.P:
                 return "P";
-            case Key.OpenBracket:
-                return "[";
-            case Key.CloseBracket:
-                return "]";
-            case Key.BackSlash:
-                return "\\";
             case Key.A:
                 return "A";
             case Key.S:
@@ -204,20 +171,12 @@ namespace keyEvents {
                 return "G";
             case Key.H:
                 return "H";
-            case Key.Space:
-                return " ";
-            case Key.PageUp:
-                return "PageUp";
             case Key.J:
                 return "J";
             case Key.K:
                 return "K";
             case Key.L:
                 return "L";
-            case Key.SemiColon:
-                return ";";
-            case Key.Apostrophe:
-                return "'";
             case Key.Z:
                 return "Z";
             case Key.X:
@@ -236,36 +195,12 @@ namespace keyEvents {
                 return ",";
             case Key.Period:
                 return ".";
-            case Key.ForwardSlash:
-                return "/";
             case Key.Shift:
                 return "Shift";
             case Key.Enter:
                 return "Enter";
-            case Key.CapsLock:
-                return "CapsLock";
             case Key.Tab:
                 return "Tab";
-            case Key.Control:
-                return "Control";
-            case Key.Meta:
-                return "Meta";
-            case Key.Alt:
-                return "Alt";
-            case Key.ArrowUp:
-                return "ArrowUp";
-            case Key.ArrowDown:
-                return "ArrowDown";
-            case Key.ArrowLeft:
-                return "ArrowLeft";
-            case Key.ArrowRight:
-                return "ArrowRight";
-            case Key.PageDown:
-                return "PageDown";
-            case Key.End:
-                return "End";
-            case Key.Home:
-                return "Home";
             case Key.Zero:
                 return "0";
             case Key.One:
@@ -286,24 +221,8 @@ namespace keyEvents {
                 return "8";
             case Key.Nine:
                 return "9";
-            case Key.BackTick:
-                return "`";
             case Key.Hyphen:
                 return "-";
-            case Key.Equals:
-                return "=";
-            case Key.LeftShift:
-                return "LeftShift";
-            case Key.RightShift:
-                return "RightShift";
-            case Key.LeftControl:
-                return "LeftControl";
-            case Key.RightControl:
-                return "RightControl";
-            case Key.Backspace:
-                return "Backspace";
-            case Key.Delete:
-                return "Delete";
         }
     }
 
@@ -586,61 +505,10 @@ namespace keyEvents {
     export const Enter = new KeyButton(Key.Enter);
 
     //% fixedInstance whenUsed
-    export const CapsLock = new KeyButton(Key.CapsLock);
-
-    //% fixedInstance whenUsed
     export const Tab = new KeyButton(Key.Tab);
 
     //% fixedInstance whenUsed
-    export const Control = new KeyButton(Key.Control);
-
-    //% fixedInstance whenUsed
-    export const Meta = new KeyButton(Key.Meta);
-
-    //% fixedInstance whenUsed
-    export const Alt = new KeyButton(Key.Alt);
-
-    //% fixedInstance whenUsed
-    export const ArrowUp = new KeyButton(Key.ArrowUp);
-
-    //% fixedInstance whenUsed
-    export const ArrowDown = new KeyButton(Key.ArrowDown);
-
-    //% fixedInstance whenUsed
-    export const ArrowLeft = new KeyButton(Key.ArrowLeft);
-
-    //% fixedInstance whenUsed
-    export const ArrowRight = new KeyButton(Key.ArrowRight);
-
-    //% fixedInstance whenUsed
-    export const BackTick = new KeyButton(Key.BackTick);
-
-    //% fixedInstance whenUsed
     export const Hyphen = new KeyButton(Key.Hyphen);
-
-    //% fixedInstance whenUsed
-    export const Equals = new KeyButton(Key.Equals);
-
-    //% fixedInstance whenUsed
-    export const OpenBracket = new KeyButton(Key.OpenBracket);
-
-    //% fixedInstance whenUsed
-    export const CloseBracket = new KeyButton(Key.CloseBracket);
-
-    //% fixedInstance whenUsed
-    export const BackSlash = new KeyButton(Key.BackSlash);
-
-    //% fixedInstance whenUsed
-    export const Space = new KeyButton(Key.Space);
-
-    //% fixedInstance whenUsed
-    export const PageUp = new KeyButton(Key.PageUp);
-
-    //% fixedInstance whenUsed
-    export const SemiColon = new KeyButton(Key.SemiColon);
-
-    //% fixedInstance whenUsed
-    export const Apostrophe = new KeyButton(Key.Apostrophe);
 
     //% fixedInstance whenUsed
     export const Comma = new KeyButton(Key.Comma);
@@ -648,35 +516,7 @@ namespace keyEvents {
     //% fixedInstance whenUsed
     export const Period = new KeyButton(Key.Period);
 
-    //% fixedInstance whenUsed
-    export const ForwardSlash = new KeyButton(Key.ForwardSlash);
 
-    //% fixedInstance whenUsed
-    export const PageDown = new KeyButton(Key.PageDown);
-
-    //% fixedInstance whenUsed
-    export const End = new KeyButton(Key.End);
-
-    //% fixedInstance whenUsed
-    export const Home = new KeyButton(Key.Home);
-
-    //% fixedInstance whenUsed
-    export const LeftShift = new KeyButton(Key.LeftShift);
-
-    //% fixedInstance whenUsed
-    export const RightShift = new KeyButton(Key.RightShift);
-
-    //% fixedInstance whenUsed
-    export const LeftControl = new KeyButton(Key.LeftControl);
-
-    //% fixedInstance whenUsed
-    export const RightControl = new KeyButton(Key.RightControl);
-
-    //% fixedInstance whenUsed
-    export const Backspace = new KeyButton(Key.Backspace);
-
-    //% fixedInstance whenUsed
-    export const Delete = new KeyButton(Key.Delete);
 
     //% fixedInstance whenUsed
     export const Any = new KeyButton(0);
@@ -699,15 +539,10 @@ namespace keyEvents {
     //% blockType="hat"
     //% draggableParameters="reporter"
     export function onAnyKeyEvent(event: KeyEvent, handler: () => void) {
-        // すべてのキーボタンに同じハンドラーを登録
+        // サポートされているキーボタンにハンドラーを登録
         const allKeys = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
             Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine,
-            Shift, Enter, CapsLock, Tab, Control, Meta, Alt,
-            ArrowUp, ArrowDown, ArrowLeft, ArrowRight,
-            BackTick, Hyphen, Equals, OpenBracket, CloseBracket, BackSlash,
-            Space, PageUp, SemiColon, Apostrophe, Comma, Period, ForwardSlash,
-            PageDown, End, Home, LeftShift, RightShift, LeftControl, RightControl,
-            Backspace, Delete];
+            Shift, Enter, Tab, Hyphen, Comma, Period];
         for (const key of allKeys) {
             key.addEventListener(event, handler);
         }
