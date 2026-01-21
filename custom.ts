@@ -1,4 +1,4 @@
-namespace browserEvents {
+namespace keyEvents {
     export enum Event {
         //% block="pointer down"
         PointerDown = 6857,
