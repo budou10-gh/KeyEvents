@@ -1,4 +1,8 @@
 keymap.setSystemKeys(0, 0, 0, 0)
+
+//% icon="⌨"
+//% color="#9c1355"
+//% block="KeyEvents"
 namespace keyEvents {
     export enum Event {
         //% block="pointer down"
