@@ -1,9 +1,9 @@
-keymap.setSystemKeys(0, 0, 0, 0)
-
 //% icon="\u2328"
-//% color="#9c1355"
+//% color="#6B23D7"
 //% block="KeyEvents"
 namespace keyEvents {
+    keymap.setSystemKeys(0, 0, 0, 0)
+
     export enum Event {
         //% block="pointer down"
         PointerDown = 6857,
