@@ -118,6 +118,7 @@ namespace keyEvents {
         M = 77,
         Comma = 188,
         Period = 190,
+        BackSpace = 8,
         Shift = 16,
         Enter = 13,
         Tab = 9,
@@ -223,6 +224,8 @@ namespace keyEvents {
                 return "9";
             case Key.Hyphen:
                 return "-";
+            case Key.BackSpace:
+                return "BackSpace";
         }
     }
 
@@ -516,7 +519,8 @@ namespace keyEvents {
     //% fixedInstance whenUsed
     export const Period = new KeyButton(Key.Period);
 
-
+    //% fixedInstance whenUsed
+    export const BackSpace = new KeyButton(Key.BackSpace);
 
     //% fixedInstance whenUsed
     export const Any = new KeyButton(0);
@@ -532,19 +536,19 @@ namespace keyEvents {
         defaultRepeatInterval = Math.max(interval, 1);
     }
 
-    //% blockId=browser_events_onAnyKeyEvent
     //% block="on any key $event"
     //% group="Keyboard"
     //% weight=98
-    //% blockType="hat"
-    //% draggableParameters="reporter"
-    export function onAnyKeyEvent(event: KeyEvent, handler: () => void) {
+    //% draggableParameters = reporter
+    export function onAnyKeyEvent(event: KeyEvent, handler: (keyEvent: string) => void) {
         // サポートされているキーボタンにハンドラーを登録
         const allKeys = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
             Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine,
-            Shift, Enter, Tab, Hyphen, Comma, Period];
+            Shift, Enter, Tab, Hyphen, Comma, Period, BackSpace];
         for (const key of allKeys) {
-            key.addEventListener(event, handler);
+            key.addEventListener(event, () => {
+                handler(keyToString(key.id as Key));
+            });
         }
     }
 
