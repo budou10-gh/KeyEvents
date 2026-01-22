@@ -1,6 +1,6 @@
 keymap.setSystemKeys(0, 0, 0, 0)
 
-//% icon="⌨"
+//% icon="\u2328"
 //% color="#9c1355"
 //% block="KeyEvents"
 namespace keyEvents {
