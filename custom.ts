@@ -1,3 +1,4 @@
+keymap.setSystemKeys(0, 0, 0, 0)
 namespace keyEvents {
     export enum Event {
         //% block="pointer down"
