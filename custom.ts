@@ -545,7 +545,7 @@ namespace keyEvents {
     //% group="Keyboard"
     //% weight=98
     //% draggableParameters = reporter
-    export function onAnyKeyEvent(event: KeyEvent, handler: (keyEvent: string) => void) {
+    export function KE_onAnyKeyEvent(event: KeyEvent, handler: (keyEvent: string) => void) {
         // サポートされているキーボタンにハンドラーを登録
         const allKeys = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
             Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine,
@@ -561,7 +561,7 @@ namespace keyEvents {
     //% block="last key pressed"
     //% group="Keyboard"
     //% weight=97
-    export function lastKeyPressed(): string {
+    export function KE_lastKeyPressed(): string {
         return keyToString(_lastKeyPressed) || "Unknown";
     }
 }
