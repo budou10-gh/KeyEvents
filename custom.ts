@@ -127,6 +127,7 @@ namespace keyEvents {
         Shift = 16,
         Enter = 13,
         Tab = 9,
+        Space = 32
     }
 
     export enum KeyEvent {
@@ -207,6 +208,8 @@ namespace keyEvents {
                 return "Enter";
             case Key.Tab:
                 return "Tab";
+            case Key.Space:
+                return " ";
             case Key.Zero:
                 return "0";
             case Key.One:
@@ -516,6 +519,9 @@ namespace keyEvents {
     export const Tab = new KeyButton(Key.Tab);
 
     //% fixedInstance whenUsed
+    export const Space = new KeyButton(Key.Space);
+
+    //% fixedInstance whenUsed
     export const Hyphen = new KeyButton(Key.Hyphen);
 
     //% fixedInstance whenUsed
@@ -549,7 +555,7 @@ namespace keyEvents {
         // サポートされているキーボタンにハンドラーを登録
         const allKeys = [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z,
             Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine,
-            Shift, Enter, Tab, Hyphen, Comma, Period, BackSpace];
+            Shift, Enter, Tab, Hyphen, Comma, Period, BackSpace, Space];
         for (const key of allKeys) {
             key.addEventListener(event, () => {
                 handler(keyToString(key.id as Key));
