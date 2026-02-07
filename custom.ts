@@ -128,7 +128,7 @@ namespace keyEvents {
         Enter = 13,
         Tab = 9,
         Space = 32,
-        Slash = 47
+        Slash = 191
     }
 
     export enum KeyEvent {
