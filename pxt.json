@@ -1,6 +1,6 @@
 {
     "name": "KeyEvents+",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "description": "A remake of the BrowserEvents extension, redesigned for greater usability and keyboard-centric functionality.",
     "dependencies": {
         "device": "*"
